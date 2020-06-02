@@ -13,10 +13,8 @@ app = GameView;
 
 db.position = Position;
 db.step = 0;
-
 gp.gameview=app;
 gp.chessDB=db;
-
 app.gameProcess=gp;
 app.chessDB=db;
 app.startDB = sdb;

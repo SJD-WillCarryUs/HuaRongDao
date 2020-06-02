@@ -65,6 +65,8 @@ classdef GameProcess < handle
                     elseif clickPoint(1)-currentChess(1)>200&&clickPoint(1)-currentChess(1)<300 ...
                         && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<200      
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
+                    else
+                        nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
                 %关羽移动
@@ -85,6 +87,8 @@ classdef GameProcess < handle
                     elseif clickPoint(1)-currentChess(1)>200&&clickPoint(1)-currentChess(1)<300 ...
                         && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100      
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
+                    else
+                        nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
                 %张飞赵云马超黄忠移动
@@ -105,6 +109,8 @@ classdef GameProcess < handle
                     elseif clickPoint(1)-currentChess(1)>100 && clickPoint(1)-currentChess(1)<200 ... 
                         && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200   
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
+                    else
+                        nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
                 %士兵移动
@@ -124,6 +130,8 @@ classdef GameProcess < handle
                     elseif clickPoint(1)-currentChess(1)>100&&clickPoint(1)-currentChess(1)<200 ...
                         && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100      
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
+                    else
+                        nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
                 end
             end
