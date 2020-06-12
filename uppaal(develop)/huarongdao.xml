@@ -3,11 +3,7 @@
 <nta>
 	<declaration>// Place global declarations here.
 
-int position[20] = {2,1,1,3,
-                    2,1,1,3,
-                    4,6,6,5,
-                    4,8,9,5,
-                    7,0,0,10};
+int position[20] = {2,1,1,3,2,1,1,3,4,6,6,5,4,8,9,5,7,0,0,10};
 
 
 </declaration>
@@ -201,338 +197,338 @@ int judge(){
     }
 }
 </declaration>
-		<location id="id0" x="-59" y="59">
-			<name x="-34" y="42">no_finish_state</name>
+		<location id="id0" x="305" y="93">
+			<name x="330" y="76">no_finish_state</name>
 		</location>
-		<location id="id1" x="-59" y="374">
-			<name x="-25" y="357">finish_state</name>
+		<location id="id1" x="305" y="408">
+			<name x="339" y="391">finish_state</name>
 		</location>
 		<init ref="id0"/>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="123">judge()==0</label>
-			<label kind="assignment" x="-41" y="157">move(9,1)</label>
-			<nail x="204" y="255"/>
-			<nail x="34" y="306"/>
+			<label kind="guard" x="323" y="157">judge()==0</label>
+			<label kind="assignment" x="323" y="191">move(9,1)</label>
+			<nail x="568" y="289"/>
+			<nail x="398" y="340"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="118">judge()==0</label>
-			<label kind="assignment" x="-41" y="152">move(9,2)</label>
-			<nail x="178" y="246"/>
-			<nail x="42" y="289"/>
+			<label kind="guard" x="323" y="152">judge()==0</label>
+			<label kind="assignment" x="323" y="186">move(9,2)</label>
+			<nail x="542" y="280"/>
+			<nail x="406" y="323"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="114">judge()==0</label>
-			<label kind="assignment" x="-41" y="148">move(9,3)</label>
-			<nail x="161" y="238"/>
-			<nail x="42" y="272"/>
+			<label kind="guard" x="323" y="148">judge()==0</label>
+			<label kind="assignment" x="323" y="182">move(9,3)</label>
+			<nail x="525" y="272"/>
+			<nail x="406" y="306"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="106">judge()==0</label>
-			<label kind="assignment" x="-41" y="140">move(9,4)</label>
-			<nail x="136" y="221"/>
-			<nail x="51" y="255"/>
+			<label kind="guard" x="323" y="140">judge()==0</label>
+			<label kind="assignment" x="323" y="174">move(9,4)</label>
+			<nail x="500" y="255"/>
+			<nail x="415" y="289"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="97">judge()==0</label>
-			<label kind="assignment" x="-41" y="131">move(8,1)</label>
-			<nail x="110" y="204"/>
-			<nail x="59" y="229"/>
+			<label kind="guard" x="323" y="131">judge()==0</label>
+			<label kind="assignment" x="323" y="165">move(8,1)</label>
+			<nail x="474" y="238"/>
+			<nail x="423" y="263"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="89">judge()==0</label>
-			<label kind="assignment" x="-41" y="123">move(8,2)</label>
-			<nail x="93" y="187"/>
-			<nail x="51" y="204"/>
+			<label kind="guard" x="323" y="123">judge()==0</label>
+			<label kind="assignment" x="323" y="157">move(8,2)</label>
+			<nail x="457" y="221"/>
+			<nail x="415" y="238"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-16" y="89">judge()==0</label>
-			<label kind="assignment" x="-16" y="123">move(8,3)</label>
-			<nail x="-34" y="76"/>
-			<nail x="68" y="170"/>
-			<nail x="42" y="187"/>
+			<label kind="guard" x="348" y="123">judge()==0</label>
+			<label kind="assignment" x="348" y="157">move(8,3)</label>
+			<nail x="330" y="110"/>
+			<nail x="432" y="204"/>
+			<nail x="406" y="221"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="67">judge()==0</label>
-			<label kind="assignment" x="-41" y="101">move(8,4)</label>
-			<nail x="42" y="144"/>
-			<nail x="25" y="161"/>
+			<label kind="guard" x="323" y="101">judge()==0</label>
+			<label kind="assignment" x="323" y="135">move(8,4)</label>
+			<nail x="406" y="178"/>
+			<nail x="389" y="195"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-59">judge()==0</label>
-			<label kind="assignment" x="-41" y="-25">move(7,1)</label>
-			<nail x="195" y="-110"/>
-			<nail x="195" y="204"/>
+			<label kind="guard" x="323" y="-25">judge()==0</label>
+			<label kind="assignment" x="323" y="9">move(7,1)</label>
+			<nail x="559" y="-76"/>
+			<nail x="559" y="238"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-51">judge()==0</label>
-			<label kind="assignment" x="-41" y="-17">move(7,2)</label>
-			<nail x="178" y="-93"/>
-			<nail x="178" y="187"/>
+			<label kind="guard" x="323" y="-17">judge()==0</label>
+			<label kind="assignment" x="323" y="17">move(7,2)</label>
+			<nail x="542" y="-59"/>
+			<nail x="542" y="221"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-34">judge()==0</label>
-			<label kind="assignment" x="-41" y="0">move(7,3)</label>
-			<nail x="136" y="-59"/>
-			<nail x="136" y="161"/>
+			<label kind="guard" x="323" y="0">judge()==0</label>
+			<label kind="assignment" x="323" y="34">move(7,3)</label>
+			<nail x="500" y="-25"/>
+			<nail x="500" y="195"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-22">judge()==0</label>
-			<label kind="assignment" x="-41" y="12">move(7,4)</label>
-			<nail x="102" y="-34"/>
-			<nail x="102" y="136"/>
+			<label kind="guard" x="323" y="12">judge()==0</label>
+			<label kind="assignment" x="323" y="46">move(7,4)</label>
+			<nail x="466" y="0"/>
+			<nail x="466" y="170"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-13">judge()==0</label>
-			<label kind="assignment" x="-41" y="21">move(6,1)</label>
-			<nail x="85" y="-17"/>
-			<nail x="85" y="110"/>
+			<label kind="guard" x="323" y="21">judge()==0</label>
+			<label kind="assignment" x="323" y="55">move(6,1)</label>
+			<nail x="449" y="17"/>
+			<nail x="449" y="144"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-5">judge()==0</label>
-			<label kind="assignment" x="-41" y="29">move(6,2)</label>
-			<nail x="59" y="0"/>
-			<nail x="59" y="93"/>
+			<label kind="guard" x="323" y="29">judge()==0</label>
+			<label kind="assignment" x="323" y="63">move(6,2)</label>
+			<nail x="423" y="34"/>
+			<nail x="423" y="127"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="8">judge()==0</label>
-			<label kind="assignment" x="-41" y="42">move(6,3)</label>
-			<nail x="25" y="25"/>
-			<nail x="25" y="76"/>
+			<label kind="guard" x="323" y="42">judge()==0</label>
+			<label kind="assignment" x="323" y="76">move(6,3)</label>
+			<nail x="389" y="59"/>
+			<nail x="389" y="110"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="12">judge()==0</label>
-			<label kind="assignment" x="-41" y="46">move(6,4)</label>
-			<nail x="17" y="34"/>
-			<nail x="17" y="59"/>
+			<label kind="guard" x="323" y="46">judge()==0</label>
+			<label kind="assignment" x="323" y="80">move(6,4)</label>
+			<nail x="381" y="68"/>
+			<nail x="381" y="93"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-271" y="182">judge()==0</label>
-			<label kind="assignment" x="-271" y="216">move(5,1)</label>
-			<nail x="-85" y="306"/>
-			<nail x="-289" y="127"/>
+			<label kind="guard" x="93" y="216">judge()==0</label>
+			<label kind="assignment" x="93" y="250">move(5,1)</label>
+			<nail x="279" y="340"/>
+			<nail x="75" y="161"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-245" y="169">judge()==0</label>
-			<label kind="assignment" x="-245" y="203">move(5,2)</label>
-			<nail x="-85" y="280"/>
-			<nail x="-263" y="127"/>
+			<label kind="guard" x="119" y="203">judge()==0</label>
+			<label kind="assignment" x="119" y="237">move(5,2)</label>
+			<nail x="279" y="314"/>
+			<nail x="101" y="161"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-220" y="157">judge()==0</label>
-			<label kind="assignment" x="-220" y="191">move(5,3)</label>
-			<nail x="-85" y="255"/>
-			<nail x="-238" y="127"/>
+			<label kind="guard" x="144" y="191">judge()==0</label>
+			<label kind="assignment" x="144" y="225">move(5,3)</label>
+			<nail x="279" y="289"/>
+			<nail x="126" y="161"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-194" y="144">judge()==0</label>
-			<label kind="assignment" x="-194" y="178">move(5,4)</label>
-			<nail x="-85" y="229"/>
-			<nail x="-212" y="127"/>
+			<label kind="guard" x="170" y="178">judge()==0</label>
+			<label kind="assignment" x="170" y="212">move(5,4)</label>
+			<nail x="279" y="263"/>
+			<nail x="152" y="161"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-169" y="131">judge()==0</label>
-			<label kind="assignment" x="-169" y="165">move(4,1)</label>
-			<nail x="-85" y="204"/>
-			<nail x="-187" y="127"/>
+			<label kind="guard" x="195" y="165">judge()==0</label>
+			<label kind="assignment" x="195" y="199">move(4,1)</label>
+			<nail x="279" y="238"/>
+			<nail x="177" y="161"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-126" y="59">judge()==0</label>
-			<label kind="assignment" x="-126" y="93">move(4,2)</label>
-			<nail x="-85" y="170"/>
-			<nail x="-144" y="127"/>
+			<label kind="guard" x="238" y="93">judge()==0</label>
+			<label kind="assignment" x="238" y="127">move(4,2)</label>
+			<nail x="279" y="204"/>
+			<nail x="220" y="161"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-72" y="67">judge()==0</label>
-			<label kind="assignment" x="-72" y="101">move(4,3)</label>
-			<nail x="-85" y="144"/>
-			<nail x="-119" y="119"/>
+			<label kind="guard" x="292" y="101">judge()==0</label>
+			<label kind="assignment" x="292" y="135">move(4,3)</label>
+			<nail x="279" y="178"/>
+			<nail x="245" y="153"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-67" y="50">judge()==0</label>
-			<label kind="assignment" x="-67" y="84">move(4,4)</label>
-			<nail x="-76" y="110"/>
-			<nail x="-93" y="102"/>
+			<label kind="guard" x="297" y="84">judge()==0</label>
+			<label kind="assignment" x="297" y="118">move(4,4)</label>
+			<nail x="288" y="144"/>
+			<nail x="271" y="136"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-424" y="-22">judge()==0</label>
-			<label kind="assignment" x="-424" y="12">move(3,1)</label>
-			<nail x="-442" y="-34"/>
-			<nail x="-187" y="-263"/>
+			<label kind="guard" x="-60" y="12">judge()==0</label>
+			<label kind="assignment" x="-60" y="46">move(3,1)</label>
+			<nail x="-78" y="0"/>
+			<nail x="177" y="-229"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-373" y="-17">judge()==0</label>
-			<label kind="assignment" x="-373" y="17">move(3,2)</label>
-			<nail x="-391" y="-25"/>
-			<nail x="-187" y="-221"/>
+			<label kind="guard" x="-9" y="17">judge()==0</label>
+			<label kind="assignment" x="-9" y="51">move(3,2)</label>
+			<nail x="-27" y="9"/>
+			<nail x="177" y="-187"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-330" y="-13">judge()==0</label>
-			<label kind="assignment" x="-330" y="21">move(3,3)</label>
-			<nail x="-348" y="-17"/>
-			<nail x="-187" y="-170"/>
+			<label kind="guard" x="34" y="21">judge()==0</label>
+			<label kind="assignment" x="34" y="55">move(3,3)</label>
+			<nail x="16" y="17"/>
+			<nail x="177" y="-136"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-288" y="-9">judge()==0</label>
-			<label kind="assignment" x="-288" y="25">move(3,4)</label>
-			<nail x="-306" y="-8"/>
-			<nail x="-178" y="-127"/>
+			<label kind="guard" x="76" y="25">judge()==0</label>
+			<label kind="assignment" x="76" y="59">move(3,4)</label>
+			<nail x="58" y="26"/>
+			<nail x="186" y="-93"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-245" y="-5">judge()==0</label>
-			<label kind="assignment" x="-245" y="29">move(2,1)</label>
-			<nail x="-263" y="0"/>
-			<nail x="-161" y="-93"/>
+			<label kind="guard" x="119" y="29">judge()==0</label>
+			<label kind="assignment" x="119" y="63">move(2,1)</label>
+			<nail x="101" y="34"/>
+			<nail x="203" y="-59"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-211" y="-1">judge()==0</label>
-			<label kind="assignment" x="-211" y="33">move(2,2)</label>
-			<nail x="-229" y="8"/>
-			<nail x="-161" y="-59"/>
+			<label kind="guard" x="153" y="33">judge()==0</label>
+			<label kind="assignment" x="153" y="67">move(2,2)</label>
+			<nail x="135" y="42"/>
+			<nail x="203" y="-25"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-177" y="4">judge()==0</label>
-			<label kind="assignment" x="-177" y="38">move(2,3)</label>
-			<nail x="-195" y="17"/>
-			<nail x="-153" y="-34"/>
+			<label kind="guard" x="187" y="38">judge()==0</label>
+			<label kind="assignment" x="187" y="72">move(2,3)</label>
+			<nail x="169" y="51"/>
+			<nail x="211" y="0"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-152" y="4">judge()==0</label>
-			<label kind="assignment" x="-152" y="38">move(2,4)</label>
-			<nail x="-170" y="17"/>
-			<nail x="-153" y="-8"/>
+			<label kind="guard" x="212" y="38">judge()==0</label>
+			<label kind="assignment" x="212" y="72">move(2,4)</label>
+			<nail x="194" y="51"/>
+			<nail x="211" y="26"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-50" y="-335">judge()==0</label>
-			<label kind="assignment" x="-50" y="-301">move(1,1)</label>
-			<nail x="-68" y="-382"/>
-			<nail x="280" y="-221"/>
+			<label kind="guard" x="314" y="-301">judge()==0</label>
+			<label kind="assignment" x="314" y="-267">move(1,1)</label>
+			<nail x="296" y="-348"/>
+			<nail x="644" y="-187"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-41" y="-314">judge()==0</label>
-			<label kind="assignment" x="-41" y="-280">move(1,2)</label>
-			<nail x="-59" y="-348"/>
-			<nail x="238" y="-212"/>
+			<label kind="guard" x="323" y="-280">judge()==0</label>
+			<label kind="assignment" x="323" y="-246">move(1,2)</label>
+			<nail x="305" y="-314"/>
+			<nail x="602" y="-178"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-33" y="-276">judge()==0</label>
-			<label kind="assignment" x="-33" y="-242">move(1,3)</label>
-			<nail x="-51" y="-297"/>
-			<nail x="187" y="-187"/>
+			<label kind="guard" x="331" y="-242">judge()==0</label>
+			<label kind="assignment" x="331" y="-208">move(1,3)</label>
+			<nail x="313" y="-263"/>
+			<nail x="551" y="-153"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="8" y="-238">judge()==0</label>
-			<label kind="assignment" x="8" y="-221">move(1,4)</label>
-			<nail x="-42" y="-247"/>
-			<nail x="136" y="-162"/>
+			<label kind="guard" x="372" y="-204">judge()==0</label>
+			<label kind="assignment" x="372" y="-187">move(1,4)</label>
+			<nail x="322" y="-213"/>
+			<nail x="500" y="-128"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-24" y="-204">judge()==0</label>
-			<label kind="assignment" x="-24" y="-170">move(10,1)</label>
-			<nail x="-42" y="-204"/>
-			<nail x="93" y="-136"/>
+			<label kind="guard" x="340" y="-170">judge()==0</label>
+			<label kind="assignment" x="340" y="-136">move(10,1)</label>
+			<nail x="322" y="-170"/>
+			<nail x="457" y="-102"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-25" y="-145">judge()==0</label>
-			<label kind="assignment" x="-24" y="-123">move(10,2)</label>
-			<nail x="-42" y="-145"/>
-			<nail x="59" y="-102"/>
+			<label kind="guard" x="339" y="-111">judge()==0</label>
+			<label kind="assignment" x="340" y="-89">move(10,2)</label>
+			<nail x="322" y="-111"/>
+			<nail x="423" y="-68"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-25" y="-94">judge()==0</label>
-			<label kind="assignment" x="-24" y="-77">move(10,3)</label>
-			<nail x="-42" y="-94"/>
-			<nail x="34" y="-60"/>
+			<label kind="guard" x="339" y="-60">judge()==0</label>
+			<label kind="assignment" x="340" y="-43">move(10,3)</label>
+			<nail x="322" y="-60"/>
+			<nail x="398" y="-26"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id0"/>
-			<label kind="guard" x="-25" y="-68">judge()==0</label>
-			<label kind="assignment" x="-25" y="-51">move(10,4)</label>
-			<nail x="-42" y="-43"/>
-			<nail x="0" y="-26"/>
+			<label kind="guard" x="339" y="-34">judge()==0</label>
+			<label kind="assignment" x="339" y="-17">move(10,4)</label>
+			<nail x="322" y="-9"/>
+			<nail x="364" y="8"/>
 		</transition>
 		<transition>
 			<source ref="id0"/>
 			<target ref="id1"/>
-			<label kind="guard" x="-51" y="102">judge()==1</label>
+			<label kind="guard" x="313" y="136">judge()==1</label>
 		</transition>
 	</template>
 	<system>// Place template instantiations here.
@@ -542,15 +538,7 @@ system Process;
     </system>
 	<queries>
 		<query>
-			<formula></formula>
-			<comment></comment>
-		</query>
-		<query>
 			<formula>E&lt;&gt; Process.finish_state</formula>
-			<comment></comment>
-		</query>
-		<query>
-			<formula></formula>
 			<comment></comment>
 		</query>
 	</queries>

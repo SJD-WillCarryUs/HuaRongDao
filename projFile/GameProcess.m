@@ -6,7 +6,7 @@ classdef GameProcess < handle
     end
     
     methods
-        function board = transMatrix(process,position)
+        function board = transMatrix(~,position)
             % transMatrix 函数可以将棋盘布局转换为一个4*5的矩阵，空出来的地方为0            
             board = zeros(5,4);
 
@@ -20,14 +20,14 @@ classdef GameProcess < handle
             item = position{6};
             y = (item(1)-5)/100+1;
             x = (item(2)-5)/100+1;
-            board(6-x,y:y+1) = [1,1];
+            board(6-x,y:y+1) = [6,6];
 
             %张飞、黄忠、赵云、马超
             for i = 2:5
                 item = position{i};
                 y = (item(1)-5)/100+1;
                 x = (item(2)-5)/100+1;
-                board(5-x:6-x,y) = [1;1];
+                board(5-x:6-x,y) = [i;i];
             end
 
             %士兵
@@ -35,11 +35,11 @@ classdef GameProcess < handle
                 item = position{i};
                 y = (item(1)-5)/100+1;
                 x = (item(2)-5)/100+1;
-                board(6-x,y) = 1;
+                board(6-x,y) = i;
             end
         end
 
-        function currentchess = getCurrentChess(process,id,position)
+        function currentchess = getCurrentChess(~,id,position)
             % 此函数将获得当前选择的滑块的位置坐标
             currentchess = position(id);
         end

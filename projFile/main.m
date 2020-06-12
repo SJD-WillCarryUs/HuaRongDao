@@ -18,4 +18,3 @@ gp.chessDB=db;
 app.gameProcess=gp;
 app.chessDB=db;
 app.startDB = sdb;
-
