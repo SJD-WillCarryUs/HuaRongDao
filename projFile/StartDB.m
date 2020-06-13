@@ -31,16 +31,16 @@ classdef StartDB < handle
                    position = {[105 305 190 190],[5 5 90 190],[105 5 90 190],...
                         [205 5 90 190],[305 5 90 190],[105 205 190 90],...
                         [5 405 90 90],[5 305 90 90],[305 305 90 90],[305 405 90 90]};
+               case 'test'
+                   position={[5 105 190 190],[5 305 90 190],[105 305 90 190],...
+                        [305 305 90 190],[305 105 90 190],[205 5 190 90],...
+                        [205 305 90 90],[205 105 90 90],[5 5 90 90],[105 5 90 90]};
                case 'diy'
                    position = process.diyPosition;
            end  
         end
         
-        function outputArg = method1(obj,inputArg)
-            %METHOD1 此处显示有关此方法的摘要
-            %   此处显示详细说明
-            outputArg = obj.Property1 + inputArg;
-        end
+
     end
 end
 

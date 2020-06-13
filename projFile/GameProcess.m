@@ -172,12 +172,14 @@ classdef GameProcess < handle
                     end
                     if process.chessDB.nextPosition(3:4)==[190 190]
                         if process.chessDB.nextPosition(1:2)==[105 5]
-                            gameover();
+                            gameover;
                         end
                     end
                 end
             end
         end
+           
     end
 end
+
 
