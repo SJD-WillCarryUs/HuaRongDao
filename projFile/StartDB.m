@@ -1,5 +1,5 @@
 classdef StartDB < handle
-    %PositionDB 里面记录了开局的其实位置
+    %the DB for the start information
     
     
     properties (Access = public)

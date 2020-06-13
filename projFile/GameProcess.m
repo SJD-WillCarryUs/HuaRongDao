@@ -7,22 +7,22 @@ classdef GameProcess < handle
     
     methods
         function board = transMatrix(~,position)
-            % transMatrix 函数可以将棋盘布局转换为一个4*5的矩阵，空出来的地方为0            
+            % translate the board into a 4*5 matrix           
             board = zeros(5,4);
 
-            %曹操
+            %2*2
             item = position{1};
             y = (item(1)-5)/100+1;
             x = (item(2)-5)/100+1;
             board(5-x:6-x,y:y+1) = [1,1;1,1];
 
-            %关羽
+            %1*2
             item = position{6};
             y = (item(1)-5)/100+1;
             x = (item(2)-5)/100+1;
             board(6-x,y:y+1) = [6,6];
 
-            %张飞、黄忠、赵云、马超
+            %2*1
             for i = 2:5
                 item = position{i};
                 y = (item(1)-5)/100+1;
@@ -30,7 +30,7 @@ classdef GameProcess < handle
                 board(5-x:6-x,y) = [i;i];
             end
 
-            %士兵
+            %1*1
             for i = 7:10
                 item = position{i};
                 y = (item(1)-5)/100+1;
@@ -40,28 +40,28 @@ classdef GameProcess < handle
         end
 
         function currentchess = getCurrentChess(~,id,position)
-            % 此函数将获得当前选择的滑块的位置坐标
+            % get the position of the chess 
             currentchess = position(id);
         end
         
         function nextPosition = move(process,clickPoint)
             currentChess = process.chessDB.currentChess{1};
             if (1<clickPoint(1)&&clickPoint(1)<399)&&(1<clickPoint(2)&&clickPoint(2)<499)
-                %曹操移动
+                %2*2
                 if currentChess(3)==190 && currentChess(4)==190
-                    %向上移动
+                    %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <200 ...
                         && clickPoint(2)-currentChess(2)>200 && clickPoint(2)-currentChess(2)<300       
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
-                    %向下移动
+                    %down
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<200 ...
                         && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100      
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
-                    %向左移动
+                    %left
                     elseif clickPoint(1)-currentChess(1)>-100&&clickPoint(1)-currentChess(1)<0 ... 
                         && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200     
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
-                    %向右移动
+                    %right
                     elseif clickPoint(1)-currentChess(1)>200&&clickPoint(1)-currentChess(1)<300 ...
                         && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<200      
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
@@ -69,21 +69,21 @@ classdef GameProcess < handle
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
-                %关羽移动
+                %1*2
                 elseif currentChess(3)==190 && currentChess(4)==90
-                    %向上移动
+                    %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <200 ...
                         && clickPoint(2)-currentChess(2)>100 && clickPoint(2)-currentChess(2)<200       
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
-                    %向下移动
+                    %down
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<200 ...
                         && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100      
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
-                    %向左移动
+                    %left
                     elseif clickPoint(1)-currentChess(1)>-100&&clickPoint(1)-currentChess(1)<0 ... 
                         && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<100     
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
-                    %向右移动
+                    %right
                     elseif clickPoint(1)-currentChess(1)>200&&clickPoint(1)-currentChess(1)<300 ...
                         && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100      
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
@@ -91,21 +91,21 @@ classdef GameProcess < handle
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
-                %张飞赵云马超黄忠移动
+                %2*1
                 elseif currentChess(3)==90 && currentChess(4)==190
-                    %向上移动
+                    %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <200 ...
                         && clickPoint(2)-currentChess(2)>200 && clickPoint(2)-currentChess(2)<300       
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
-                    %向下移动
+                    %up
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<100 ...
                         && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100      
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
-                    %向左移动
+                    %up
                     elseif clickPoint(1)-currentChess(1)>-100 && clickPoint(1)-currentChess(1)<0 ... 
                         && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200   
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
-                    %向右移动
+                    %up
                     elseif clickPoint(1)-currentChess(1)>100 && clickPoint(1)-currentChess(1)<200 ... 
                         && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200   
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
@@ -113,20 +113,20 @@ classdef GameProcess < handle
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
-                %士兵移动
+                %1*1
                 elseif currentChess(3)==90 && currentChess(4)==90
-                    %向上移动
+                    %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <100 ...
                         && clickPoint(2)-currentChess(2)>100 && clickPoint(2)-currentChess(2)<200       
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
-                    %向下移动
+                    %down
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<100 && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
-                    %向左移动
+                    %left
                     elseif clickPoint(1)-currentChess(1)>-100&&clickPoint(1)-currentChess(1)<0 ... 
                         && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<100     
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
-                    %向右移动
+                    %right
                     elseif clickPoint(1)-currentChess(1)>100&&clickPoint(1)-currentChess(1)<200 ...
                         && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100      
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
@@ -138,7 +138,7 @@ classdef GameProcess < handle
         end
         
         function judge(process)
-            % 此函数将判断滑块的移动是否符合规则
+            % judge whether the move is legal
             process.chessDB.position{process.chessDB.id}=process.chessDB.nextPosition;
             board = process.transMatrix(process.chessDB.position);
             if sum(board(:)==0) ~= 2
