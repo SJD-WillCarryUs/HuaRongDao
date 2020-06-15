@@ -1,4 +1,4 @@
-classdef testHRDAPP < matlab.uitest.TestCase
+classdef testRunAPP < matlab.uitest.TestCase
     properties
         app
     end
@@ -25,26 +25,14 @@ classdef testHRDAPP < matlab.uitest.TestCase
             testCase.addTeardown(@delete,testCase.app);
         end
     end
+    
     methods (Test)
         function test_SelectButtonPushed(testCase)
-            % State: No order for the table and no dish selected
-            % Input: Choose appetizer 1 and press select button
-            % Expected Output: OrderList has appetizer 1's name, amount and
-            % unit price
-            normal_pause_time = 0.1;
+            normal_pause_time = 0.2;
             longer_pause_time = 1;
             
             testCase.press(testCase.app.Option);
             option_window = testCase.app.ov;
-            pause(normal_pause_time);
-            testCase.press(option_window.theme);
-            theme_window = option_window.tbp;
-            pause(normal_pause_time);
-            testCase.press(theme_window.theme2);
-            pause(normal_pause_time);
-            testCase.press(theme_window.theme1);
-            pause(normal_pause_time);
-            close(theme_window.UIFigure);
             pause(normal_pause_time);
             testCase.press(option_window.choose);
             mode_window = option_window.mcv;
@@ -93,7 +81,7 @@ classdef testHRDAPP < matlab.uitest.TestCase
             pause(normal_pause_time);
             testCase.press(playground.Caocao);
             pause(normal_pause_time);
-            testCase.press(playground.UIFigure, [100, 100]);
+            testCase.press(playground.UIFigure, [100, 50]);
             pause(normal_pause_time);
             testCase.press(playground.soldier1);
             pause(normal_pause_time);
@@ -128,16 +116,6 @@ classdef testHRDAPP < matlab.uitest.TestCase
             testCase.press(option_window.resume);
             close(option_window.UIFigure);
             pause(longer_pause_time);
-            % close(optionWindow);
-%             testCase.choose(testCase.app.appetizer1Node);
-%             pause(0.5)
-%             testCase.press(testCase.app.SelectButton);
-%             pause(0.5)
-%             testCase.verifyEqual(testCase.app.OrderList.Data{1},testCase.app.appetizer1Node.Text);
-%              testCase.verifyEqual(testCase.app.OrderList.Data{2},1);
-%               testCase.verifyEqual(testCase.app.OrderList.Data{3},testCase.app.appetizer1Node.NodeData);
         end
-        
     end
-    
 end
