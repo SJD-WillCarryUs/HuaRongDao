@@ -27,7 +27,7 @@ classdef testRunAPP < matlab.uitest.TestCase
     end
     
     methods (Test)
-        function test_SelectButtonPushed(testCase)
+        function testRun(testCase)
             normal_pause_time = 0.2;
             longer_pause_time = 1;
             

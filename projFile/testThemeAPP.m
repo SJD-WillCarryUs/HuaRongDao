@@ -27,7 +27,7 @@ classdef testThemeAPP < matlab.uitest.TestCase
     end
     
     methods (Test)
-        function test_SelectButtonPushed(testCase)
+        function testTheme(testCase)
             normal_pause_time = 0.3;
             longer_pause_time = 1;
             
