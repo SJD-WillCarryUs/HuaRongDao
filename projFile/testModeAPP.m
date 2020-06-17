@@ -30,7 +30,7 @@ classdef testModeAPP < matlab.uitest.TestCase
         function testMode(testCase)
             normal_pause_time = 0.3;
             longer_pause_time = 1;
-            
+            playground = testCase.app;
             testCase.press(testCase.app.Option);
             option_window = testCase.app.ov;
             pause(normal_pause_time);
@@ -47,10 +47,17 @@ classdef testModeAPP < matlab.uitest.TestCase
             pause(longer_pause_time);
             testCase.press(mode_window.jiezuiandeng);
             pause(longer_pause_time);
-            testCase.press(mode_window.Button);
+
+            pause(normal_pause_time);
+            pause(normal_pause_time);
+            testCase.press(playground.Guanyu);
+            pause(normal_pause_time);
+            testCase.press(playground.UIFigure, [350, 250]);
+            pause(normal_pause_time);
+            testCase.press(option_window.resume);
+            pause(longer_pause_time);
             pause(longer_pause_time);
             close(mode_window.UIFigure);
-            pause(normal_pause_time);
             close(option_window.UIFigure);
             
         end

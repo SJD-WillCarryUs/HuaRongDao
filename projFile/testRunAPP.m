@@ -110,10 +110,7 @@ classdef testRunAPP < matlab.uitest.TestCase
             pause(longer_pause_time);
             close(playground.gameProcess.gameover_view.UIFigure);
             
-            testCase.press(testCase.app.Option);
-            option_window = testCase.app.ov;
             pause(normal_pause_time);
-            testCase.press(option_window.resume);
             close(option_window.UIFigure);
             pause(longer_pause_time);
         end

@@ -22,7 +22,7 @@ classdef testDIYAPP < matlab.uitest.TestCase
             testCase.app.gameProcess = gp;
             testCase.app.chessDB = db;
             testCase.app.startDB = sdb;
-            testCase.addTeardown(@delete,testCase.app);
+%             testCase.addTeardown(@delete,testCase.app);
         end
     end
     
@@ -84,9 +84,17 @@ classdef testDIYAPP < matlab.uitest.TestCase
             pause(normal_pause_time);
             close(diy_window.UIFigure);
             pause(normal_pause_time);
-            close(option_window.UIFigure);
+
             testCase.press(testCase.app.solvebyAI);
             pause(longer_pause_time);
+            playground = testCase.app;
+            testCase.press(playground.Machao);
+            pause(longer_pause_time);
+            testCase.press(playground.UIFigure, [350, 100]);
+             pause(longer_pause_time);
+            testCase.press(option_window.resume);
+            pause(longer_pause_time);
+            close(option_window.UIFigure);
         end
     end
 end
