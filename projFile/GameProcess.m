@@ -49,66 +49,66 @@ classdef GameProcess < handle
             currentChess = process.chessDB.currentChess{1};
             if (1<clickPoint(1)&&clickPoint(1)<399)&&(1<clickPoint(2)&&clickPoint(2)<499)
                 %2*2
-                if currentChess(3)==190 && currentChess(4)==190
+                if currentChess(3)==190 && currentChess(4)==190 % T 
                     %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <200 ...
-                        && clickPoint(2)-currentChess(2)>200 && clickPoint(2)-currentChess(2)<300       
+                        && clickPoint(2)-currentChess(2)>200 && clickPoint(2)-currentChess(2)<300 
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
                     %down
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<200 ...
-                        && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100      
+                        && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
                     %left
                     elseif clickPoint(1)-currentChess(1)>-100&&clickPoint(1)-currentChess(1)<0 ... 
-                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200     
+                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
                     %right
                     elseif clickPoint(1)-currentChess(1)>200&&clickPoint(1)-currentChess(1)<300 ...
-                        && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<200      
+                        && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<200
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
                     else
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
                 %1*2
-                elseif currentChess(3)==190 && currentChess(4)==90
+                elseif currentChess(3)==190 && currentChess(4)==90  % T
                     %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <200 ...
-                        && clickPoint(2)-currentChess(2)>100 && clickPoint(2)-currentChess(2)<200       
+                        && clickPoint(2)-currentChess(2)>100 && clickPoint(2)-currentChess(2)<200 
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
                     %down
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<200 ...
-                        && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100      
+                        && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
                     %left
                     elseif clickPoint(1)-currentChess(1)>-100&&clickPoint(1)-currentChess(1)<0 ... 
-                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<100     
+                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<100
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
                     %right
                     elseif clickPoint(1)-currentChess(1)>200&&clickPoint(1)-currentChess(1)<300 ...
-                        && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100      
+                        && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
                     else
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
                     end
 
                 %2*1
-                elseif currentChess(3)==90 && currentChess(4)==190
+                elseif currentChess(3)==90 && currentChess(4)==190  % T
                     %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <200 ...
-                        && clickPoint(2)-currentChess(2)>200 && clickPoint(2)-currentChess(2)<300       
+                        && clickPoint(2)-currentChess(2)>200 && clickPoint(2)-currentChess(2)<300  
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
                     %up
                     elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<100 ...
-                        && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100      
+                        && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
                     %up
                     elseif clickPoint(1)-currentChess(1)>-100 && clickPoint(1)-currentChess(1)<0 ... 
-                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200   
+                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
                     %up
                     elseif clickPoint(1)-currentChess(1)>100 && clickPoint(1)-currentChess(1)<200 ... 
-                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200   
+                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<200
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
                     else
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
@@ -118,18 +118,19 @@ classdef GameProcess < handle
                 elseif currentChess(3)==90 && currentChess(4)==90
                     %up
                     if clickPoint(1)-currentChess(1) >0 && clickPoint(1)-currentChess(1) <100 ...
-                        && clickPoint(2)-currentChess(2)>100 && clickPoint(2)-currentChess(2)<200       
+                        && clickPoint(2)-currentChess(2)>100 && clickPoint(2)-currentChess(2)<200 
                         nextPosition=[currentChess(1) currentChess(2)+100 currentChess(3) currentChess(4)];
                     %down
-                    elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<100 && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100
+                    elseif clickPoint(1)-currentChess(1)>0 && clickPoint(1)-currentChess(1)<100 ...
+                            && clickPoint(2)-currentChess(2)<0 && clickPoint(2)-currentChess(2)>-100
                         nextPosition=[currentChess(1) currentChess(2)-100 currentChess(3) currentChess(4)];
                     %left
                     elseif clickPoint(1)-currentChess(1)>-100&&clickPoint(1)-currentChess(1)<0 ... 
-                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<100     
+                        && clickPoint(2)-currentChess(2)>0&&clickPoint(2)-currentChess(2)<100
                         nextPosition=[currentChess(1)-100 currentChess(2) currentChess(3) currentChess(4)];
                     %right
                     elseif clickPoint(1)-currentChess(1)>100&&clickPoint(1)-currentChess(1)<200 ...
-                        && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100      
+                        && clickPoint(2)-currentChess(2)>0 && clickPoint(2)-currentChess(2)<100
                         nextPosition=[currentChess(1)+100 currentChess(2) currentChess(3) currentChess(4)];
                     else
                         nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
