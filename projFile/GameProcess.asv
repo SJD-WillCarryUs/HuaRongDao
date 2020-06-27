@@ -136,7 +136,7 @@ classdef GameProcess < handle
                     end
                 end
             else
-                nextPosition = [currentChess(1) currentChess(2) currentChess(3) currentChess(4)];
+                
             end
         end
         
