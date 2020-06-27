@@ -22,7 +22,7 @@ classdef testDIYAPP < matlab.uitest.TestCase
             testCase.app.gameProcess = gp;
             testCase.app.chessDB = db;
             testCase.app.startDB = sdb;
-%             testCase.addTeardown(@delete,testCase.app);
+            testCase.addTeardown(@delete,testCase.app);
         end
     end
     
