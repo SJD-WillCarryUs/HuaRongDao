@@ -148,10 +148,10 @@ classdef GameProcess < handle
             if sum(board(:)==0) ~= 2  % the move is illegal
                 process.chessDB.position(process.chessDB.id)=process.chessDB.currentChess;
             else
-                if isequal(board,process.chessDB.currentLocate)
+                if isequal(board,process.chessDB.currentLocate)   % check the play do nothing
                 else
                     process.chessDB.step = process.chessDB.step + 1;
-                    process.gameview.StepButton.Text=num2str(process.chessDB.step);
+                    process.gameview.StepButton.Text=num2str(process.chessDB.step);    % update the step
                     switch process.chessDB.id
                         case 1
                             process.gameview.Caocao.Position = process.chessDB.nextPosition;
@@ -175,7 +175,7 @@ classdef GameProcess < handle
                             process.gameview.soldier3.Position = process.chessDB.nextPosition;
                     end
                     if process.chessDB.nextPosition(3:4)==[190 190]
-                        if process.chessDB.nextPosition(1:2)==[105 5]
+                        if process.chessDB.nextPosition(1:2)==[105 5]   % Cao Cao arrive the exit
                             process.gameover_view = gameover;
                         end
                     end
